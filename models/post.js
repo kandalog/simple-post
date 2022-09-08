@@ -14,8 +14,10 @@ module.exports = (sequelize, DataTypes) => {
   Post.init(
     {
       userId: DataTypes.INTEGER,
+      allowNull: false,
       content: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: { notNull: { msg: "内容は必ず入力してください" } },
       },
     },

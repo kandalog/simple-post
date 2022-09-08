@@ -15,14 +15,17 @@ module.exports = (sequelize, DataTypes) => {
     {
       name: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: { notNull: { msg: "名前は必ず入力してください" } },
       },
       email: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: { notNull: { msg: "メールアドレスは必ず入力してください" } },
       },
       password: {
         type: DataTypes.STRING,
+        allowNull: false,
         validate: { notNull: { msg: "パスワードは必ず入力してください" } },
       },
     },
