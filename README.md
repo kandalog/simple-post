@@ -15,7 +15,8 @@ Node 及び mysql ローカルにあること
 3. `config/config.json`の編集
    DB 名と password を変更してください
 4. terminal や GUI ツールを使用して自分が利用したい名前の DB を作成
-5. `npm start && open http://localhost:3000`
+5. `npx sequelize-cli db:migrate`
+6. `npm start && open http://localhost:3000`
 
 get 以外の機能をブラウザで試すことができないので、Postman を使用することを推奨します。
 
